@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Nectar Chapin</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="contact_page_header">
+    <nav class="help_navbar contact_navbar">
+      <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="help_logo nav_logo_link" href="index.html">
+        <img src="img/LOGO .jpeg" alt="Logo Nectar Chapin">
+        <h2>Nectar<span>Chapin</span></h2>
+      </a>
+
+      <ul class="help_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="help_actions">
+        <a class="login_btn" href="login.html">Iniciar sesión</a>
+        <a class="premium_btn" href="Plan.html">
+          <i class="fa-solid fa-crown"></i>
+          Premium
+        </a>
+      </div>
+    </nav>
+
+    <main class="contact_apple_page">
+      <section class="contact_hero_support">
+        <span>Centro de ayuda Nectar Chapin</span>
+        <h1>¿En qué podemos ayudarte?</h1>
+        <p>Encuentra atención para pedidos, productos, entregas y beneficios Premium en un solo lugar.</p>
+      </section>
+
+      <section class="support_tiles" aria-label="Opciones de contacto">
+        <a class="support_tile" href="catalogo.html">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <h2>Comprar productos</h2>
+          <p>Consulta jugos, mermeladas y vino de manzana disponibles.</p>
+        </a>
+
+        <a class="support_tile" href="mailto:info@nectarchapin.com">
+          <i class="fa-solid fa-envelope"></i>
+          <h2>Correo</h2>
+          <p>Escríbenos para cotizaciones, pedidos especiales o dudas.</p>
+        </a>
+
+        <a class="support_tile" href="tel:12345678">
+          <i class="fa-solid fa-phone"></i>
+          <h2>Llamada</h2>
+          <p>Habla con nosotros para confirmar disponibilidad y entregas.</p>
+        </a>
+      </section>
+
+      <section class="contact_service_panel">
+        <div class="contact_service_text">
+          <span>Atención personalizada</span>
+          <h2>Cuéntanos qué necesitas y te responderemos pronto.</h2>
+          <p>Completa el formulario con tu producto de interés, cantidad y zona de entrega. Nuestro equipo podrá ayudarte con una respuesta más clara.</p>
+
+          <div class="quick_contact_list">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Villa Nueva, Guatemala</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-clock"></i>
+              <span>Lunes a sábado, 8:00 a 18:00</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Pedidos y entregas según disponibilidad</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact_form" id="contactForm">
+          <label>
+            Nombre
+            <input type="text" placeholder="Tu nombre completo" required>
+          </label>
+
+          <label>
+            Correo electrónico
+            <input type="email" placeholder="correo@ejemplo.com" required>
+          </label>
+
+          <label>
+            Producto de interés
+            <select required>
+              <option value="">Selecciona un producto</option>
+              <option>Jugo de manzana</option>
+              <option>Mermelada de manzana</option>
+              <option>Vino de manzana</option>
+              <option>Plan Premium</option>
+            </select>
+          </label>
+
+          <label>
+            Mensaje
+            <textarea placeholder="Cuéntanos cantidad, presentación o zona de entrega" required></textarea>
+          </label>
+
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Enviar mensaje
+          </button>
+        </form>
+      </section>
+
+      <section class="contact_faq">
+        <h2>Preguntas frecuentes</h2>
+        <div class="contact_faq_grid">
+          <article>
+            <h3>¿Puedo pedir varias presentaciones?</h3>
+            <p>Sí. Puedes combinar jugo, mermelada y vino según disponibilidad.</p>
+          </article>
+          <article>
+            <h3>¿Tienen beneficios Premium?</h3>
+            <p>Sí. Los planes Premium incluyen promociones, descuentos y atención preferente.</p>
+          </article>
+          <article>
+            <h3>¿Dónde veo los precios?</h3>
+            <p>Los precios están en el catálogo, separados por producto y presentación.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </header>
+
+  <script src="navbar.js"></script>
+  <script src="contacto.js"></script>
+</body>
+</html>

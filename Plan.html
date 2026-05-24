@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium - Nectar Chapin</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="planes_header crunchy_plan_header">
+    <nav class="help_navbar crunchy_navbar">
+      <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="help_logo nav_logo_link" href="index.html">
+        <img src="img/LOGO .jpeg" alt="Logo Nectar Chapin">
+        <h2>Nectar<span>Chapin</span></h2>
+      </a>
+
+      <ul class="help_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="help_actions">
+        <a class="login_btn" href="login.html">Iniciar sesión</a>
+        <a class="premium_btn" href="Plan.html">
+          <i class="fa-solid fa-crown"></i>
+          Premium
+        </a>
+      </div>
+    </nav>
+
+    <main class="plans_streaming_page">
+      <section class="plans_streaming_hero">
+        <h1>Elige tu plan</h1>
+        <p>Nectar Chapin transforma la manzana en jugos, mermeladas y vino artesanal con sabor guatemalteco para disfrutar en casa, regalar o compartir en momentos especiales.</p>
+      </section>
+
+      <section class="plans_streaming_options" aria-label="Planes Nectar Chapin">
+        <article class="streaming_plan_card active" tabindex="0"
+          data-plan-name="Básico Chapín"
+          data-plan-price="29.90"
+          data-plan-period="Mensual"
+          data-plan-description="Plan Básico Chapín de Nectar Chapin: beneficios para descubrir productos artesanales de manzana, promociones seleccionadas y acceso a novedades de temporada.">
+          <h2>Básico Chapín</h2>
+          <div class="streaming_price">
+            <span>12x</span>
+            <strong>Q29.90</strong>
+            <em>/mes</em>
+          </div>
+          <p>Plan de 12 meses</p>
+          <h3>Precio total anual Q358.80</h3>
+          <ul>
+            <li>Promociones seleccionadas</li>
+            <li>Novedades de productos de manzana</li>
+            <li>Atención en 1 pedido prioritario al mes</li>
+          </ul>
+        </article>
+
+        <article class="streaming_plan_card" tabindex="0"
+          data-plan-name="Estándar Chapín"
+          data-plan-price="39.90"
+          data-plan-period="Mensual"
+          data-plan-description="Plan Estándar Chapín de Nectar Chapin: descuentos en jugo, mermelada y vino de manzana, beneficios para pedidos frecuentes y acceso anticipado a promociones.">
+          <h2>Estándar Chapín</h2>
+          <div class="streaming_price">
+            <span>12x</span>
+            <strong>Q39.90</strong>
+            <em>/mes</em>
+          </div>
+          <p>Plan de 12 meses</p>
+          <h3>Precio total anual Q478.80</h3>
+          <ul>
+            <li>Descuentos en productos seleccionados</li>
+            <li>Acceso anticipado a promociones</li>
+            <li>Atención en 3 pedidos prioritarios al mes</li>
+          </ul>
+        </article>
+
+        <article class="streaming_plan_card" tabindex="0"
+          data-plan-name="Platino Chapín"
+          data-plan-price="59.90"
+          data-plan-period="Mensual"
+          data-plan-description="Plan Platino Chapín de Nectar Chapin: máxima experiencia premium con mayores descuentos, prioridad en pedidos especiales, beneficios para regalos y promociones de temporada.">
+          <h2>Platino Chapín</h2>
+          <div class="streaming_price">
+            <span>12x</span>
+            <strong>Q59.90</strong>
+            <em>/mes</em>
+          </div>
+          <p>Plan de 12 meses</p>
+          <h3>Precio total anual Q718.80</h3>
+          <ul>
+            <li>Mayor descuento en todo el catálogo</li>
+            <li>Beneficios para regalos y eventos</li>
+            <li>Atención prioritaria en pedidos especiales</li>
+            <li>Promociones de temporada exclusivas</li>
+          </ul>
+        </article>
+      </section>
+
+      <p class="streaming_plan_note">
+        Los beneficios pueden variar según disponibilidad de jugo, mermelada y vino de manzana. Los planes se renuevan mensualmente durante 12 meses y pueden cancelarse según las condiciones de Nectar Chapin.
+      </p>
+
+      <a class="streaming_continue_btn" id="planContinueBtn" href="pago.html?tipo=plan&nombre=B%C3%A1sico%20Chap%C3%ADn&descripcion=Plan%20B%C3%A1sico%20Chap%C3%ADn%20de%20Nectar%20Chapin%3A%20beneficios%20para%20descubrir%20productos%20artesanales%20de%20manzana%2C%20promociones%20seleccionadas%20y%20acceso%20a%20novedades%20de%20temporada.&precio=29.90&periodo=Mensual">
+        Continuar
+      </a>
+    </main>
+  </header>
+  <script src="navbar.js"></script>
+  <script src="planes.js"></script>
+</body>
+</html>

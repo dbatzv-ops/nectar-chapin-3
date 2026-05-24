@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Nectar Chapin</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="catalogo_header">
+    <nav class="help_navbar">
+      <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="help_logo nav_logo_link" href="index.html">
+        <img src="img/LOGO .jpeg" alt="Logo Nectar Chapin">
+        <h2>Nectar<span>Chapin</span></h2>
+      </a>
+
+      <ul class="help_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="help_actions">
+        <a class="login_btn" href="login.html">Iniciar sesión</a>
+        <a class="premium_btn" href="Plan.html">
+          <i class="fa-solid fa-crown"></i>
+          Premium
+        </a>
+      </div>
+    </nav>
+
+    <section class="catalogo_section">
+      <div class="catalogo_intro">
+        <span>Catálogo Nectar Chapin</span>
+        <h1>Productos de manzana con sabor artesanal</h1>
+        <p>Elige jugo, mermelada o vino en la presentación ideal para tu mesa, regalo o celebración.</p>
+      </div>
+
+      <div class="catalogo_shell">
+        <aside class="catalogo_sidebar">
+          <h3>Comprar por producto</h3>
+
+          <button class="catalogo_filter active" data-categoria="todos">
+            <i class="fa-solid fa-border-all"></i>
+            Todos
+          </button>
+
+          <button class="catalogo_filter" data-categoria="jugo">
+            <i class="fa-solid fa-bottle-water"></i>
+            Jugo
+          </button>
+
+          <button class="catalogo_filter" data-categoria="mermelada">
+            <i class="fa-solid fa-jar"></i>
+            Mermelada
+          </button>
+
+          <button class="catalogo_filter" data-categoria="vino">
+            <i class="fa-solid fa-wine-bottle"></i>
+            Vino
+          </button>
+
+          <div class="catalogo_tip">
+            <i class="fa-solid fa-apple-whole"></i>
+            <p>Productos elaborados con manzana y presentaciones pensadas para cada ocasión.</p>
+          </div>
+        </aside>
+
+        <div class="catalogo_content">
+          <div class="catalogo_toolbar">
+            <div>
+              <h2 id="catalogoTitulo">Todos los productos</h2>
+              <p id="catalogoContador">Productos disponibles</p>
+            </div>
+
+            <a href="contacto.html" class="catalogo_checkout">
+              <i class="fa-solid fa-message"></i>
+              Pedir información
+            </a>
+          </div>
+
+          <div class="catalogo_container" id="catalogoProductos"></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <span class="top" id="to-top"><i class="ri-arrow-up-circle-line"></i></span>
+  <script src="navbar.js"></script>
+  <script src="catalogo.js"></script>
+</body>
+</html>

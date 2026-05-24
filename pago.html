@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodo de pago - Nectar Chapin</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="payment_header">
+    <nav class="help_navbar payment_navbar">
+      <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="help_logo nav_logo_link" href="index.html">
+        <img src="img/LOGO .jpeg" alt="Logo Nectar Chapin">
+        <h2>Nectar<span>Chapin</span></h2>
+      </a>
+
+      <ul class="help_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="Plan.html">Planes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="help_actions">
+        <a class="login_btn" href="login.html">Iniciar sesión</a>
+        <a class="premium_btn" href="Plan.html">
+          <i class="fa-solid fa-crown"></i>
+          Premium
+        </a>
+      </div>
+    </nav>
+
+    <main class="payment_page">
+      <section class="payment_summary" aria-label="Resumen de compra">
+        <span class="payment_badge" id="paymentTipo">Compra</span>
+        <h1 id="paymentNombre">Nectar Chapin</h1>
+
+        <div class="payment_product_media" id="paymentMedia">
+          <img id="paymentImagen" src="img/LOGO .jpeg" alt="Producto seleccionado">
+        </div>
+
+        <p id="paymentDescripcion">Selecciona un producto o plan para ver el detalle de pago.</p>
+
+        <div class="payment_features" id="paymentFeatures"></div>
+
+        <div class="payment_totals">
+          <div>
+            <span id="paymentConcepto">Subtotal</span>
+            <strong id="paymentSubtotal">Q0.00</strong>
+          </div>
+          <div>
+            <span>Impuesto (0%)</span>
+            <strong>Q0.00</strong>
+          </div>
+          <div class="payment_total_row">
+            <span>Monto a pagar hoy</span>
+            <strong id="paymentTotal">Q0.00</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="payment_form_panel" aria-label="Forma de pago">
+        <h2>Forma de pago</h2>
+
+        <div class="payment_method_grid" role="tablist" aria-label="Metodos de pago">
+          <button class="payment_method active" type="button" data-method="card">
+            <i class="fa-solid fa-credit-card"></i>
+            <span>Tarjeta</span>
+          </button>
+          <button class="payment_method" type="button" data-method="paypal">
+            <i class="fa-brands fa-paypal"></i>
+            <span>PayPal</span>
+          </button>
+        </div>
+
+        <form class="payment_form" id="paymentForm">
+          <div class="card_fields active" id="cardFields">
+            <label class="payment_input full">
+              <span>Número de tarjeta</span>
+              <input type="text" inputmode="numeric" autocomplete="cc-number" aria-label="Numero de tarjeta">
+              <em class="card_brands">
+                <b>VISA</b>
+                <b>MC</b>
+                <b>AMEX</b>
+                <b>DISC</b>
+              </em>
+            </label>
+
+            <label class="payment_input">
+              <span>Fecha de vencimiento</span>
+              <input type="text" inputmode="numeric" autocomplete="cc-exp" aria-label="Fecha de vencimiento">
+            </label>
+
+            <label class="payment_input">
+              <span>Código de seguridad</span>
+              <input type="text" inputmode="numeric" autocomplete="cc-csc" aria-label="Codigo de seguridad">
+              <i class="fa-regular fa-credit-card"></i>
+            </label>
+          </div>
+
+          <div class="paypal_fields" id="paypalFields">
+            <a class="paypal_notice paypal_redirect" href="https://www.paypal.com/signin" target="_blank" rel="noopener">
+              <i class="fa-brands fa-paypal"></i>
+              <h3>Se seleccionó PayPal.</h3>
+              <p>Después del envío, se te redirigirá para completar los siguientes pasos de forma segura.</p>
+            </a>
+            <p class="paypal_copy">Al confirmar tu pago con PayPal, autorizas los cargos correspondientes para Nectar Chapin.</p>
+          </div>
+
+          <div class="billing_block">
+            <h2>Dirección de facturación</h2>
+
+            <label class="payment_input full">
+              <span>Nombre completo</span>
+              <input type="text" autocomplete="name" aria-label="Nombre completo">
+            </label>
+
+            <label class="payment_input full select_like">
+              <small>País o región</small>
+              <select aria-label="Pais o region">
+                <option>Guatemala</option>
+                <option>El Salvador</option>
+                <option>Honduras</option>
+                <option>México</option>
+              </select>
+              <i class="fa-solid fa-chevron-down"></i>
+            </label>
+
+            <label class="payment_input full">
+              <span>Primera línea de la dirección</span>
+              <input type="text" autocomplete="address-line1" aria-label="Primera linea de la direccion">
+            </label>
+          </div>
+
+          <button class="complete_purchase" type="submit">Completar compra</button>
+
+          <p class="payment_legal" id="paymentLegal">
+            Se procesará tu compra de forma segura. Al completar la compra, aceptas los términos de servicio y la política de privacidad de Nectar Chapin.
+          </p>
+        </form>
+      </section>
+    </main>
+  </header>
+
+  <script src="navbar.js"></script>
+  <script src="pago.js"></script>
+</body>
+</html>

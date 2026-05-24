@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Nectar Chapin</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="auth_header">
+    <nav class="help_navbar">
+      <button class="mobile_menu_btn" type="button" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="help_logo auth_logo_link" href="index.html">
+        <img src="img/LOGO .jpeg" alt="Logo Nectar Chapin">
+        <h2>Nectar<span>Chapin</span></h2>
+      </a>
+
+      <ul class="help_menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="help_actions">
+        <a class="premium_btn" href="Plan.html">
+          <i class="fa-solid fa-crown"></i>
+          Premium
+        </a>
+      </div>
+    </nav>
+
+    <main class="auth_page">
+      <section class="auth_panel" id="authPanel">
+        <div class="auth_form_container auth_sign_up">
+          <form class="auth_modern_form">
+            <h1>Crear cuenta</h1>
+
+            <div class="social-icons">
+              <a href="#" class="icon" aria-label="Registrarse con Google"><i class="fa-brands fa-google"></i></a>
+              <a href="#" class="icon" aria-label="Registrarse con Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon" aria-label="Registrarse con GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon" aria-label="Registrarse con LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <span>o usa tu correo electrónico</span>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarme</button>
+          </form>
+        </div>
+
+        <div class="auth_form_container auth_sign_in">
+          <form class="auth_modern_form">
+            <h1>Iniciar sesión</h1>
+
+            <div class="social-icons">
+              <a href="#" class="icon" aria-label="Ingresar con Google"><i class="fa-brands fa-google"></i></a>
+              <a href="#" class="icon" aria-label="Ingresar con Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon" aria-label="Ingresar con GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon" aria-label="Ingresar con LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <span>o ingresa con tu correo</span>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
+
+        <div class="auth_toggle_container">
+          <div class="auth_toggle">
+            <div class="auth_toggle_panel auth_toggle_left">
+              <h1>¡Bienvenido de vuelta!</h1>
+              <p>Ingresa para revisar pedidos, promociones y beneficios de Nectar Chapin.</p>
+              <button class="auth_hidden" id="login" type="button">Iniciar sesión</button>
+            </div>
+
+            <div class="auth_toggle_panel auth_toggle_right">
+              <h1>¡Hola!</h1>
+              <p>Crea tu cuenta para comprar más rápido y recibir beneficios especiales.</p>
+              <button class="auth_hidden" id="register" type="button">Registrarme</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </header>
+
+  <script src="navbar.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
